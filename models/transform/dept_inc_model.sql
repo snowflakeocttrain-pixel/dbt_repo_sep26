@@ -8,5 +8,5 @@ select     department_id ,
 
 {% if is_incremental() %}
 -- this filter will only be applied on an incremental run
-where METADATA$ACTION!='DELETE'
+where 1=1
 {% endif %}
