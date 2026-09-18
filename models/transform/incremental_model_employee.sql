@@ -8,5 +8,5 @@ employee_id, employee_name, department_id, manager_id, job_title, salary, hire_d
 
 {% if is_incremental() %}
 -- this filter will only be applied on an incremental run
-where METADATA$ACTION!='DELETE'
+where 1=1
 {% endif %}

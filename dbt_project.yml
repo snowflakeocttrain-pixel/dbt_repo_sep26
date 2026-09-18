@@ -42,3 +42,4 @@ models:
       +materialized: table
     transform:
       +materialized: view
+      +transient: false
