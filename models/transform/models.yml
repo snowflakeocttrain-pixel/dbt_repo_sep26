@@ -1,0 +1,25 @@
+
+version: 2
+
+models:
+    - name: product_revenue
+      description: "this calculates product wise revenue"
+      columns:
+          - name: revenue
+            description: "calculated value quantity*price"
+            tests:
+                - check_negative
+                - not_null
+
+    - name: emp_count
+      description: "A starter dbt model"
+      columns:
+          - name: employee_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: employee_count
+            description: "The primary key for this table"
+            tests:
+                - check_negative

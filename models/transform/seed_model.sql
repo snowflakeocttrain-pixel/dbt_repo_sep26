@@ -1,0 +1,1 @@
+select t.*,{{add_etl_columns()}} from {{ref('country_codes')}} t
